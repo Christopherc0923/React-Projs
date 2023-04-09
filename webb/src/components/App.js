@@ -1,12 +1,11 @@
 import React from "react";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+
+import { HashRouter, Routes, Route } from "react-router-dom";
+
 import Nav from "./pages/Nav";
-import { Routes, Route, } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
+import About from "./pages/About";
 import Footer from "./pages/Footer";
-import Music from "./pages/Music";
 
 export default function App() {
   let current = "home";
@@ -17,16 +16,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="About" element={<About />} />
-        <Route path="Contact" element={<Contact />} />
-        <Route path="Music" element={<Music />} />
       </Routes>
       <Footer />
     </HashRouter>
   );
 }
-
-/*
-
-    
-
-*/
