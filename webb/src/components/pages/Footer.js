@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 export default function Footer() {
   const [date, setDate] = useState(new Date());
   useEffect(() => {

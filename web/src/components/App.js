@@ -1,32 +1,35 @@
 import React from "react";
+
+import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
+
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Nav from "./pages/Nav";
-import { Routes, Route, } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
 import Footer from "./pages/Footer";
 import Music from "./pages/Music";
+import IBM from "./pages/IBM";
+import Stock from "./pages/Stock";
+import StockEarnings from "./pages/StockEarnings";
+import Weather from "./pages/Weather";
 
 export default function App() {
   let current = "home";
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="About" element={<About />} />
         <Route path="Contact" element={<Contact />} />
         <Route path="Music" element={<Music />} />
+        <Route path="IBM" element={<IBM />} />
+        <Route path="Stock" element={<Stock />} />
+        <Route path="StockEarnings" element={<StockEarnings />} />
+        <Route path="Weather" element={<Weather />} />
       </Routes>
       <Footer />
-    </HashRouter>
+    </BrowserRouter>
   );
 }
-
-/*
-
-    
-
-*/
