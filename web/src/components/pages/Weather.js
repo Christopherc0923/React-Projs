@@ -1,4 +1,3 @@
-import { set } from "lodash";
 import React, { useState, useEffect } from "react";
 import Chart from "chart.js/auto";
 

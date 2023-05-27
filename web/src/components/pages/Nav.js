@@ -40,6 +40,36 @@ export default function Nav() {
                 Weather
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to="/sentiment" className="nav-link">
+                Sentiment
+              </Link>
+            </li>
+
+            {/* Dropdown Menu */}
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Form Project
+              </a>
+
+              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <Link to="/leetcode" className="dropdown-item">
+                  Leetcode
+                </Link>
+
+                <Link to="/expense" className="dropdown-item">
+                  Expense
+                </Link>
+              </div>
+            </li>
 
             {/* Dropdown Menu */}
             <li className="nav-item dropdown">

@@ -12,6 +12,9 @@ import IBM from "./pages/IBM";
 import Stock from "./pages/Stock";
 import StockEarnings from "./pages/StockEarnings";
 import Weather from "./pages/Weather";
+import Sentiment from "./pages/Sentiment";
+import ExpenseForm from "./pages/Expense";
+import Leetcode from "./pages/Leetcode";
 
 export default function App() {
   let current = "home";
@@ -28,6 +31,9 @@ export default function App() {
         <Route path="Stock" element={<Stock />} />
         <Route path="StockEarnings" element={<StockEarnings />} />
         <Route path="Weather" element={<Weather />} />
+        <Route path="Sentiment" element={<Sentiment />} />
+        <Route path="Expense" element={<ExpenseForm />} />
+        <Route path="Leetcode" element={<Leetcode />} />
       </Routes>
       <Footer />
     </BrowserRouter>
