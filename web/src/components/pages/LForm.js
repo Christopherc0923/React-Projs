@@ -43,9 +43,11 @@ export default function Form({ addData }) {
   };
 
   return (
-    <div className="container">
-      <form className="container" onSubmit={submitHandler}>
-        <div className="mb-3">
+    <div className="container text-center">
+      <h2>LeetCode Submission Form</h2>
+      <hr />
+      <form className="container row" onSubmit={submitHandler}>
+        <div className="col-md-3">
           <h4>Problem</h4>
           <input
             type="text"
@@ -55,7 +57,7 @@ export default function Form({ addData }) {
             onChange={(event) => setProblem(event.target.value)}
           />
         </div>
-        <div className="mb-3">
+        <div className="col-md-3">
           <h4>Type</h4>
           <input
             type="text"
@@ -65,7 +67,7 @@ export default function Form({ addData }) {
             onChange={(event) => setType(event.target.value)}
           />
         </div>
-        <div className="mb-3">
+        <div className="col-md-3">
           <h4>Comment</h4>
           <input
             type="text"
@@ -75,7 +77,7 @@ export default function Form({ addData }) {
             onChange={(event) => setComment(event.target.value)}
           />
         </div>
-        <div className="mb-3">
+        <div className="col-md-3">
           <h4>Link</h4>
           <input
             type="text"

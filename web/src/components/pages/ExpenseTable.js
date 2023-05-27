@@ -26,14 +26,24 @@ export default function ExpenseTable() {
     }
   };
 
+  const handleDelete = async (id) => {
+    try {
+      await axios.delete(`http://localhost:5000/api/expenseRecords/${id}`);
+      fetchData();
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
+
   return (
     <div className="container">
-      <table className="table table-bordered">
-        <thead>
-          <tr>
+      <table className="table text-center">
+        <thead className="thead-dark">
+          <tr className="">
             <th>Date</th>
             <th>Description</th>
             <th>Amount</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -42,6 +52,14 @@ export default function ExpenseTable() {
               <td>{item.date.split("T")[0]}</td>
               <td>{item.description}</td>
               <td>{item.amount}</td>
+              <td className="text-center">
+                <button
+                  className="btn btn-danger"
+                  onClick={() => handleDelete(item._id)}
+                >
+                  Delete
+                </button>
+              </td>
             </tr>
           ))}
         </tbody>

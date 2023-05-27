@@ -25,3 +25,14 @@ exports.getExpenseRecords = async (req, res) => {
     res.status(500).json({ message: "Failed to fetch records" });
   }
 };
+
+exports.deleteExpenseRecord = async (req, res) => {
+  try {
+    const { id } = req.params;
+    await ExpenseRecord.findByIdAndDelete(id);
+    res.sendStatus(204);
+  } catch (error) {
+    console.error("Error:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+};

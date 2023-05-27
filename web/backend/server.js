@@ -8,6 +8,7 @@ const { createRecord, getRecords } = require("./controllers/recordsController");
 const {
   createExpenseRecord,
   getExpenseRecords,
+  deleteExpenseRecord,
 } = require("./controllers/expenseController");
 
 dotenv.config();
@@ -46,6 +47,7 @@ app.get("/api/records", getRecords); // GET route for retrieving records
 app.use("/api/expenseRecords", expenseRecordsRouter);
 app.post("/api/expenseRecords", createExpenseRecord); // POST route for creating a new record
 app.get("/api/expenseRecords", getExpenseRecords); // GET route for retrieving records
+app.delete("/api/expenseRecords/:id", deleteExpenseRecord);
 
 // Error handling middleware
 app.use((error, req, res, next) => {
