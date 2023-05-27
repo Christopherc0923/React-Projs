@@ -42,6 +42,27 @@ export default function Form({ addData }) {
     }
   };
 
+  const options = [
+    "Array & Hashing",
+    "Two Pointers",
+    "Stack",
+    "Binary Search",
+    "Sliding Window",
+    "Linked List",
+    "Trees",
+    "Tries",
+    "Backtracking",
+    "Heap",
+    "Greedy",
+    "Graph",
+    "Math",
+    "1-D DP",
+    "2-D DP",
+    "Bit Manipulation",
+  ];
+
+  options.sort();
+
   return (
     <div className="container text-center">
       <h2>LeetCode Submission Form</h2>
@@ -50,22 +71,28 @@ export default function Form({ addData }) {
         <div className="col-md-3">
           <h4>Problem</h4>
           <input
-            type="text"
+            type="number"
             className="form-control"
-            placeholder="Problem"
+            placeholder="Problem Number"
             value={problem}
             onChange={(event) => setProblem(event.target.value)}
           />
         </div>
+
         <div className="col-md-3">
           <h4>Type</h4>
-          <input
-            type="text"
+          <select
             className="form-control"
-            placeholder="Type"
             value={type}
             onChange={(event) => setType(event.target.value)}
-          />
+          >
+            <option value="">Select Type</option>
+            {options.map((option, index) => (
+              <option key={index} value={option}>
+                {option}
+              </option>
+            ))}
+          </select>
         </div>
         <div className="col-md-3">
           <h4>Comment</h4>

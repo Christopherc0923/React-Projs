@@ -86,14 +86,6 @@ export default function Form() {
             placeholder="If you have something you like me to know..."
           />
         </label>
-        <label>
-          Upload File:
-          <input
-            name="file"
-            type="file"
-            onChange={(e) => setFile(e.target.files[0])}
-          />
-        </label>
       </fieldset>
       <fieldset>
         <label>
