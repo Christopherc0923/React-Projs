@@ -1,18 +1,58 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import axios from "axios";
 
-export default function Form() {
+export default function Form({ addData }) {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [find, setFind] = useState("");
   const [textBox, setTextBox] = useState("");
-  const [file, setFile] = useState("");
   const [term, setTerm] = useState(false);
 
-  const handleSubmit = (event) => {
+  const url = "http://localhost:5000/api/formRecords";
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
     // handle form submission
+    if (firstName && lastName && email && phone && find && textBox && term) {
+      const formData = {
+        firstName,
+        lastName,
+        email,
+        phone,
+        find,
+        textBox,
+        term,
+      };
+
+      try {
+        // Make a POST request to the backend API
+        const response = await axios.post(url, formData);
+
+        if (response.status === 200) {
+          // Clear form fields if the data was successfully uploaded
+          setFirstName("");
+          setLastName("");
+          setEmail("");
+          setPhone("");
+          setFind("");
+          setTextBox("");
+          setTerm("");
+
+          window.location.reload();
+
+          // Add the form data to the parent component's state
+          addData(formData);
+
+          console.log("Form data added to MongoDB");
+        } else {
+          console.error("Failed to add form data to MongoDB");
+        }
+      } catch (error) {
+        console.error("Error:", error);
+      }
+    }
   };
 
   return (

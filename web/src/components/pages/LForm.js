@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-export default function Form({ addData }) {
+export default function LForm({ addData }) {
   const [problem, setProblem] = useState("");
   const [type, setType] = useState("");
   const [comment, setComment] = useState("");

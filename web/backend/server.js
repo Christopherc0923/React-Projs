@@ -3,13 +3,25 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const recordsRouter = require("./routes/records");
-const expenseRecordsRouter = require("./routes/expenseRecords.js");
+const expenseRecordsRouter = require("./routes/expenseRecords");
+const formRecordsRouter = require("./routes/formRecords");
+
+// Leetcode Record
 const { createRecord, getRecords } = require("./controllers/recordsController");
+
+// Expense Record
 const {
   createExpenseRecord,
   getExpenseRecords,
   deleteExpenseRecord,
 } = require("./controllers/expenseController");
+
+// Contact Form Record
+const {
+  createFormRecord,
+  getFormRecords,
+  deleteFormRecord,
+} = require("./controllers/formController");
 
 dotenv.config();
 
@@ -44,10 +56,16 @@ mongoose
 app.use("/api/records", recordsRouter);
 app.post("/api/records", createRecord); // POST route for creating a new record
 app.get("/api/records", getRecords); // GET route for retrieving records
+
 app.use("/api/expenseRecords", expenseRecordsRouter);
 app.post("/api/expenseRecords", createExpenseRecord); // POST route for creating a new record
 app.get("/api/expenseRecords", getExpenseRecords); // GET route for retrieving records
 app.delete("/api/expenseRecords/:id", deleteExpenseRecord);
+
+app.use("/api/formRecords", formRecordsRouter);
+app.post("/api/formRecords", createFormRecord); // POST route for creating a new record
+app.get("/api/formRecords", getFormRecords); // GET route for retrieving records
+app.delete("/api/formRecords/:id", deleteFormRecord);
 
 // Error handling middleware
 app.use((error, req, res, next) => {

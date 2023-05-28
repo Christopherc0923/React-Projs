@@ -15,6 +15,7 @@ import Weather from "./pages/Weather";
 import Sentiment from "./pages/Sentiment";
 import ExpenseForm from "./pages/Expense";
 import Leetcode from "./pages/Leetcode";
+import BackToTop from "./pages/backToTop";
 
 export default function App() {
   let current = "home";
@@ -35,6 +36,7 @@ export default function App() {
         <Route path="Expense" element={<ExpenseForm />} />
         <Route path="Leetcode" element={<Leetcode />} />
       </Routes>
+      <BackToTop />
       <Footer />
     </BrowserRouter>
   );

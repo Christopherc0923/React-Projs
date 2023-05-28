@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function ProjectItem(props) {
   const itemStyle = {
-    height: "800px",
+    height: "auto",
     padding: "20px",
     border: "1px solid #ccc",
     borderRadius: "5px",
@@ -45,8 +45,8 @@ export default function ProjectItem(props) {
 
       <div className="container text-center">
         <p className="text-justify">{props.description.slice(0, 200)}</p>
-        <h4 className="text-center">Skills Used</h4>
-        <p>{props.skill}</p>
+        <hr />
+        <p style={{ height: "50px" }}>{props.skill}</p>
       </div>
     </div>
   );

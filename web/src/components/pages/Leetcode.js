@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Form from "./LForm";
+import LForm from "./LForm";
 import Table from "./LTable";
 
 export default function Leetcode() {
@@ -11,7 +11,7 @@ export default function Leetcode() {
 
   return (
     <div>
-      <Form addData={addData} />
+      <LForm addData={addData} />
       <Table data={data} />
     </div>
   );
