@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../css/global.css";
 
 export default function ProjectItem(props) {
   const itemStyle = {
@@ -15,7 +16,7 @@ export default function ProjectItem(props) {
     <div className="container" style={itemStyle}>
       <div classname="container">
         <h3 style={{ height: "120px" }}>
-          {props.isExternal == "true" ? (
+          {props.isExternal === "true" ? (
             <a
               href={props.url}
               target="_blank"
@@ -35,10 +36,15 @@ export default function ProjectItem(props) {
       <hr />
 
       <div
-        className="container d-flex align-items-center justify-content-center"
+        className="container d-flex align-items-center justify-content-center image-container"
         style={{ height: "300px" }}
       >
-        <img src={props.img} alt={props.title} width="100%" />
+        <img
+          src={props.img}
+          alt={props.title}
+          className="img-fluid mw-100"
+          style={{ maxHeight: "300px" }}
+        />
       </div>
 
       <hr />

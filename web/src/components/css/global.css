@@ -4,3 +4,14 @@
   right: 40px;
   z-index: 9999;
 }
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.max-width-300 {
+  max-width: 300px;
+  height: auto;
+  max-height: 100%;
+}

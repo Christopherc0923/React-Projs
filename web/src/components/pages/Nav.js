@@ -1,7 +1,17 @@
-import React from "react";
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Nav() {
+  {
+    /*
+
+  const toggleHandler = () => {
+    const [isDarkMode, setIsDarkMode] = useState(false);
+  };
+
+  */
+  }
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg">
@@ -48,11 +58,6 @@ export default function Nav() {
                 <li className="nav-item">
                   <Link to="/weather" className="nav-link">
                     Weather
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/sentiment" className="nav-link">
-                    Sentiment
                   </Link>
                 </li>
 
@@ -110,6 +115,15 @@ export default function Nav() {
                       Stock Earnings
                     </Link>
                   </div>
+                </li>
+
+                <li className="nav-item">
+                  <button
+                    className="nav-link btn btn-danger"
+                    // onSubmit={toggleHandler}
+                  >
+                    Button
+                  </button>
                 </li>
               </ul>
             </div>

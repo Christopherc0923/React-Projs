@@ -1,7 +1,6 @@
 import React from "react";
 import Project from "./Project";
 import { Link } from "react-router-dom";
-import backToTop from "./backToTop";
 
 export default function About() {
   return (

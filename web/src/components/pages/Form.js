@@ -137,7 +137,8 @@ export default function Form({ addData }) {
             onChange={(e) => setTerm(e.target.checked)}
             required
           />
-          I agree to the <a href="">terms and conditions</a>
+          I agree to the{" "}
+          <a href="http://localhost:3000/">terms and conditions</a>
         </label>
       </fieldset>
       <button type="submit">Submit</button>

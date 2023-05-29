@@ -12,14 +12,14 @@ export default function Footer() {
     <div className="container text-center">
       <footer className="site-footer footer mt-auto py-3">
         <hr />
-        <div className="container">
+        <div className="container text-center">
           <div className="row">
-            <div className="col-sm-6 col-md-3 text-center">
+            <div className="col-md-3 text-center">
               <h3>Current Time:</h3>
               <h4>{date.toLocaleTimeString()}</h4>
             </div>
 
-            <div className="col-sm-12 col-md-6">
+            <div className="col-md-6">
               <h6>About</h6>
               <p className="text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
@@ -31,7 +31,7 @@ export default function Footer() {
               </p>
             </div>
 
-            <div className="col-sm-6 col-md-3">
+            <div className="col-md-3">
               <h6>Quick Links</h6>
               <ul className="footer-links">
                 <li>
