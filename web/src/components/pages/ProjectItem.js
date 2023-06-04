@@ -50,7 +50,7 @@ export default function ProjectItem(props) {
       <hr />
 
       <div className="container text-center">
-        <p className="text-justify">{props.description.slice(0, 200)}</p>
+        <p className="text-justify">{props.description.slice(0, 300)}</p>
         <hr />
         <p style={{ height: "50px" }}>{props.skill}</p>
       </div>

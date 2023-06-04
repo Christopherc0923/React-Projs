@@ -10,12 +10,11 @@ export default function Contact() {
   };
 
   return (
-    <div className="container text-center">
-      <h1 className="text-center">Contact Us</h1>
-      <p className="text-center">
-        Please fill out the form below to contact me!
-      </p>
-      <div className="form">
+    <div className="container text-center row">
+      <div className="col-md-4 d-flex align-items-center justify-content-center">
+        <h1 className="text-center">Contact Us</h1>
+      </div>
+      <div className="form col-md-8">
         <Form addData={addData} />
       </div>
     </div>

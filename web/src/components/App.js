@@ -22,18 +22,20 @@ export default function App() {
   return (
     <BrowserRouter>
       <Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="About" element={<About />} />
-        <Route path="Contact" element={<Contact />} />
-        <Route path="Music" element={<Music />} />
-        <Route path="IBM" element={<IBM />} />
-        <Route path="Stock" element={<Stock />} />
-        <Route path="StockEarnings" element={<StockEarnings />} />
-        <Route path="Weather" element={<Weather />} />
-        <Route path="Expense" element={<ExpenseForm />} />
-        <Route path="Leetcode" element={<Leetcode />} />
-      </Routes>
+      <div style={{ margin: "75px" }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="About" element={<About />} />
+          <Route path="Contact" element={<Contact />} />
+          <Route path="Music" element={<Music />} />
+          <Route path="IBM" element={<IBM />} />
+          <Route path="Stock" element={<Stock />} />
+          <Route path="StockEarnings" element={<StockEarnings />} />
+          <Route path="Weather" element={<Weather />} />
+          <Route path="Expense" element={<ExpenseForm />} />
+          <Route path="Leetcode" element={<Leetcode />} />
+        </Routes>
+      </div>
       <BackToTop />
       <Footer />
     </BrowserRouter>

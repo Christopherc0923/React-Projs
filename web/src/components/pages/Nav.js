@@ -14,7 +14,7 @@ export default function Nav() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div className="container-fluid row">
           {/* left side */}
           <div className="col-lg-3 col-md-12 text-center" id="leftside">

@@ -4,6 +4,7 @@ import ProjectItem from "./ProjectItem";
 export default function Project() {
   return (
     <div className="container">
+      <h3 className="text-center">Projects</h3>
       <div className="row">
         <div className="col-lg-4">
           <ProjectItem
@@ -35,6 +36,41 @@ export default function Project() {
             img="Citibike.jpg"
             page=""
             url="https://www.google.com"
+            isExternal="true"
+          />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-lg-4">
+          <ProjectItem
+            title="Heart Attack Classification"
+            description="Temp"
+            skill="Python - Sklearn, Pandas"
+            img="DiscordIcon.png"
+            page=""
+            url=""
+            isExternal="true"
+          />
+        </div>
+        <div className="col-lg-4">
+          <ProjectItem
+            title="Intel Module Website Restructure"
+            description="Increased process efficiency and improved clarity for engineers and technicians by rebuilding the website infrastructure using Bootstrap and JavaScript, migrating database pulling from VBA scripting to Python and SQL, and visualizing data with PowerBI. Developed dashboards that visualized data trends for wafer processing tools using PowerBI, resulting in improved data-driven decision-making for manufacturing processes and identifying solutions for unexpected tool errors."
+            skill="Python, SQL, TOAD, HTML, CSS, Bootstrap, PowerBI, JavaScript, VBA"
+            img="intel.png"
+            page=""
+            url=""
+            isExternal="true"
+          />
+        </div>
+        <div className="col-lg-4">
+          <ProjectItem
+            title="Intel Capacity ML Model"
+            description="Developed machine learning models to determine optimal run condition for wafer processing"
+            skill="Python, SQL, TOAD"
+            img="intel.png"
+            page=""
+            url=""
             isExternal="true"
           />
         </div>

@@ -39,12 +39,14 @@ export default function IBM() {
           Page {pageNumber} of {numPages}
         </p>
         <button
+          className="btn"
           disabled={pageNumber <= 1}
           onClick={() => setTimeout(() => setPageNumber(pageNumber - 1), 500)}
         >
           Previous
         </button>
         <button
+          className="btn"
           disabled={pageNumber >= numPages}
           onClick={() => setTimeout(() => setPageNumber(pageNumber + 1), 500)}
         >

@@ -1,6 +1,8 @@
 import React from "react";
 import Project from "./Project";
+import Contact from "./Contact";
 import { Link } from "react-router-dom";
+import Skill from "./Skill";
 
 export default function About() {
   return (
@@ -49,7 +51,11 @@ export default function About() {
         </div>
       </div>
       <hr />
+      <Skill />
+      <hr />
       <Project />
+      <hr />
+      <Contact />
     </div>
   );
 }

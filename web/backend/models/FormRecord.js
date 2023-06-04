@@ -8,7 +8,6 @@ const formRecordSchema = new mongoose.Schema({
   phone: { type: Number, required: true },
   referral: { type: Number, required: true },
   additional: { type: Number, required: false },
-  agree: { type: Number, required: true },
 });
 
 const FormRecord = mongoose.model("FormRecord", formRecordSchema);
