@@ -50,18 +50,14 @@ export default function Nav() {
                     About
                   </Link>
                 </li>
+
                 <li className="nav-item">
-                  <Link to="/contact" className="nav-link">
-                    Contact
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/weather" className="nav-link">
-                    Weather
+                  <Link to="/SimpleReactApp" className="nav-link">
+                    Simple React App
                   </Link>
                 </li>
 
-                {/* Dropdown Menu */}
+                {/* Dropdown Menu 
                 <li className="nav-item dropdown">
                   <a
                     className="nav-link dropdown-toggle"
@@ -89,7 +85,7 @@ export default function Nav() {
                   </div>
                 </li>
 
-                {/* Dropdown Menu */}
+
                 <li className="nav-item dropdown">
                   <a
                     className="nav-link dropdown-toggle"
@@ -116,6 +112,7 @@ export default function Nav() {
                     </Link>
                   </div>
                 </li>
+                */}
 
                 <li className="nav-item">
                   <button

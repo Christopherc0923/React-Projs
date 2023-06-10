@@ -17,6 +17,7 @@ import Leetcode from "./pages/leetcodeapp/Leetcode";
 import BackToTop from "./universal/backToTop";
 import WebsiteRestructure from "./pages/intelproj/websiteRestructure";
 import AbortML from "./pages/intelproj/abortML";
+import SimpleReactApp from "./pages/simplereactapp/simplereactapp";
 
 export default function App() {
   let current = "home";
@@ -38,6 +39,7 @@ export default function App() {
           <Route path="Leetcode" element={<Leetcode />} />
           <Route path="IntelModuleWeb" element={<WebsiteRestructure />} />
           <Route path="IntelAbortML" element={<AbortML />} />
+          <Route path="SimpleReactApp" element={<SimpleReactApp />} />
         </Routes>
       </div>
       <BackToTop />
