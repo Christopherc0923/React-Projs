@@ -20,20 +20,36 @@ export default function Skill() {
       <h3 className="text-center m-3">Skills</h3>
       <div className="container row">
         <div className="col-md-3">
-          <h5>Programming Languages:</h5>
-          <SkillList items={programmingLanguages} />
+          <div className="row">
+            <h5>Programming Languages:</h5>
+          </div>
+          <div className="row">
+            <SkillList items={programmingLanguages} />
+          </div>
         </div>
         <div className="col-md-3">
-          <h5>Web Development:</h5>
-          <SkillList items={webDevelopment} />
+          <div className="row">
+            <h5>Web Development:</h5>
+          </div>
+          <div className="row">
+            <SkillList items={webDevelopment} />
+          </div>
         </div>
         <div className="col-md-3">
-          <h5>Data Analysis and Visualization:</h5>
-          <SkillList items={dataAnalysis} />
+          <div className="row">
+            <h5>Data Analysis and Visualization:</h5>
+          </div>
+          <div className="row">
+            <SkillList items={dataAnalysis} />
+          </div>
         </div>
         <div className="col-md-3">
-          <h5>Databases:</h5>
-          <SkillList items={databases} />
+          <div className="row">
+            <h5>Databases:</h5>
+          </div>
+          <div className="row">
+            <SkillList items={databases} />
+          </div>
         </div>
       </div>
     </div>

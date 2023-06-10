@@ -3,18 +3,20 @@ import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Nav from "./pages/Nav";
+import Contact from "./pages/contactform/Contact";
+import Nav from "./universal/Nav";
 import Home from "./pages/Home";
-import Footer from "./pages/Footer";
+import Footer from "./universal/Footer";
 import Music from "./pages/Music";
 import IBM from "./pages/IBM";
-import Stock from "./pages/Stock";
-import StockEarnings from "./pages/StockEarnings";
-import Weather from "./pages/Weather";
-import ExpenseForm from "./pages/Expense";
-import Leetcode from "./pages/Leetcode";
-import BackToTop from "./pages/backToTop";
+import Stock from "./pages/stockapp/Stock";
+import StockEarnings from "./pages/stockapp/StockEarnings";
+import Weather from "./pages/weatherapp/Weather";
+import ExpenseForm from "./pages/expenseapp/Expense";
+import Leetcode from "./pages/leetcodeapp/Leetcode";
+import BackToTop from "./universal/backToTop";
+import WebsiteRestructure from "./pages/intelproj/websiteRestructure";
+import AbortML from "./pages/intelproj/abortML";
 
 export default function App() {
   let current = "home";
@@ -34,6 +36,8 @@ export default function App() {
           <Route path="Weather" element={<Weather />} />
           <Route path="Expense" element={<ExpenseForm />} />
           <Route path="Leetcode" element={<Leetcode />} />
+          <Route path="IntelModuleWeb" element={<WebsiteRestructure />} />
+          <Route path="IntelAbortML" element={<AbortML />} />
         </Routes>
       </div>
       <BackToTop />

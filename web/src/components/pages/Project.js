@@ -5,6 +5,10 @@ export default function Project() {
   return (
     <div className="container">
       <h3 className="text-center">Projects</h3>
+
+      {/* Could look to either add this to mongoDB or make a js file with a dictionary of all projectitem */}
+
+      {/* Row 1 */}
       <div className="row">
         <div className="col-lg-4">
           <ProjectItem
@@ -40,6 +44,7 @@ export default function Project() {
           />
         </div>
       </div>
+      {/* Row 2 */}
       <div className="row">
         <div className="col-lg-4">
           <ProjectItem
@@ -58,9 +63,9 @@ export default function Project() {
             description="Increased process efficiency and improved clarity for engineers and technicians by rebuilding the website infrastructure using Bootstrap and JavaScript, migrating database pulling from VBA scripting to Python and SQL, and visualizing data with PowerBI. Developed dashboards that visualized data trends for wafer processing tools using PowerBI, resulting in improved data-driven decision-making for manufacturing processes and identifying solutions for unexpected tool errors."
             skill="Python, SQL, TOAD, HTML, CSS, Bootstrap, PowerBI, JavaScript, VBA"
             img="intel.png"
-            page=""
+            page="IntelModuleWeb"
             url=""
-            isExternal="true"
+            isExternal="false"
           />
         </div>
         <div className="col-lg-4">
@@ -69,6 +74,20 @@ export default function Project() {
             description="Developed machine learning models to determine optimal run condition for wafer processing"
             skill="Python, SQL, TOAD"
             img="intel.png"
+            page="IntelAbortML"
+            url=""
+            isExternal="false"
+          />
+        </div>
+      </div>
+      {/* Row 3 */}
+      <div className="row">
+        <div className="col-lg-4">
+          <ProjectItem
+            title="Nothing Shop"
+            description="The website is an online shop that focuses on offering a curated selection of just one product, embodying the principles of minimalism. Their philosophy revolves around the idea that simplicity and elegance can go hand in hand, and that a single remarkable item can make a statement and enhance one's lifestyle. Each item in their collection is meticulously chosen to showcase minimalistic design, functionality, and quality. The website encourages a clutter-free lifestyle and aims to provide customers with a unique shopping experience centered around the beauty and essence of one exceptional product."
+            skill="Bootstrap, HTML/CSS, JavaScript, ReactJS"
+            img=""
             page=""
             url=""
             isExternal="true"

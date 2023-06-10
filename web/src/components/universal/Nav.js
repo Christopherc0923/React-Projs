@@ -119,7 +119,7 @@ export default function Nav() {
 
                 <li className="nav-item">
                   <button
-                    className="nav-link btn btn-danger"
+                    className="nav-link btn"
                     // onSubmit={toggleHandler}
                   >
                     Button
