@@ -1,5 +1,5 @@
 import React from "react";
-import Project from "./Project";
+import Project from "./project/Project";
 import Contact from "./contactform/Contact";
 import { Link } from "react-router-dom";
 import Skill from "./Skill";

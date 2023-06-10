@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../css/global.css";
+import "../../css/global.css";
 
 export default function ProjectItem(props) {
   const itemStyle = {

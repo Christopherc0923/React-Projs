@@ -53,7 +53,13 @@ export default function Nav() {
 
                 <li className="nav-item">
                   <Link to="/SimpleReactApp" className="nav-link">
-                    Simple React App
+                    Simple React Apps
+                  </Link>
+                </li>
+
+                <li className="nav-item">
+                  <Link to="/MLProj" className="nav-link">
+                    ML Projects
                   </Link>
                 </li>
 
@@ -116,7 +122,7 @@ export default function Nav() {
 
                 <li className="nav-item">
                   <button
-                    className="nav-link btn"
+                    className="nav-link btn "
                     // onSubmit={toggleHandler}
                   >
                     Button
