@@ -23,6 +23,7 @@ function App() {
               element={<ProductDetail products={Products} />}
             />
             <Route path="/" element={<Home />} />
+            <Route component={<Home />} />
           </Routes>
           <Footer />
         </Router>
