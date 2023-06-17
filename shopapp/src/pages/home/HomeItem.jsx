@@ -12,7 +12,7 @@ export default function HomeItem(props) {
   return (
     <div
       className={
-        bg === "bg-dark" ? "container-fluid bg-dark m-3" : "container-fluid m-3"
+        bg === "bg-dark" ? "container-fluid bg-dark" : "container-fluid"
       }
     >
       <div className="row d-flex justify-content-center">
