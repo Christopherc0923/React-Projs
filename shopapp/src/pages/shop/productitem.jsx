@@ -1,6 +1,7 @@
 import React from "react";
 import { useContext } from "react";
-import { ShopContext } from "../../context/shop-context";
+import { ShopContext } from "../../shop-context";
+import { Link } from "react-router-dom";
 
 export const ProductItem = (props) => {
   const { id, productName, price, productImage } = props.data;
@@ -31,6 +32,9 @@ export const ProductItem = (props) => {
         <button className="addToCartBttn m-3" onClick={() => addToCart(id)}>
           Add To Cart {cartItemAmount > 0 && <> ({cartItemAmount})</>}
         </button>
+        <Link to={`/product/${id}`}>
+          <button className="addToCartBttn m-3">View Details</button>
+        </Link>
       </div>
     </div>
   );

@@ -3,8 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Cart from "./pages/cart/cart";
 import Shop from "./pages/shop/shop";
-import { ShopContextProvider } from "./context/shop-context";
+import Home from "./pages/home/Home";
+import ProductDetail from "./pages/shop/productDetail";
+import { ShopContextProvider } from "./shop-context";
 import Footer from "./components/Footer";
+import { Products } from "./products";
 
 function App() {
   return (
@@ -13,8 +16,13 @@ function App() {
         <Router>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Shop />} />
+            <Route path="/shop" element={<Shop />} />
             <Route path="/cart" element={<Cart />} />
+            <Route
+              path="/product/:id"
+              element={<ProductDetail products={Products} />}
+            />
+            <Route path="/" element={<Home />} />
           </Routes>
           <Footer />
         </Router>
