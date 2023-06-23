@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <ShopContextProvider>
-        <Router>
+        <Router basename="/React-Projs">
           <Navbar />
           <Routes>
             <Route path="/shop" element={<Shop />} />
@@ -23,8 +23,6 @@ function App() {
               element={<ProductDetail products={Products} />}
             />
             <Route path="/" element={<Home />} />
-            <Route path="/React-Projs" element={<Home />} />
-            <Route component={<Home />} />
           </Routes>
           <Footer />
         </Router>
