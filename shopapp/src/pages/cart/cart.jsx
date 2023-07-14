@@ -17,9 +17,11 @@ export default function Cart() {
       </div>
       <div className="cartItems">
         {Products.map((product) => {
-          if (cartItem[product.id] !== 0) {
+          const item = cartItem.find((item) => item.id === product.id);
+          if (item && item.quantity > 0) {
             return <CartItem data={product} />;
           }
+          return null;
         })}
       </div>
 

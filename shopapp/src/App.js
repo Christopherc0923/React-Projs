@@ -8,6 +8,8 @@ import ProductDetail from "./pages/shop/productDetail";
 import { ShopContextProvider } from "./shop-context";
 import Footer from "./components/Footer";
 import { Products } from "./products";
+import CartSuccess from "./pages/cart/cartSuccess";
+import CartCancel from "./pages/cart/cartCancel";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
               element={<ProductDetail products={Products} />}
             />
             <Route path="/" element={<Home />} />
+            <Route path="/cart/success" component={<CartSuccess />} />
+            <Route path="/cart/cancel" component={<CartCancel />} />
           </Routes>
           <Footer />
         </Router>

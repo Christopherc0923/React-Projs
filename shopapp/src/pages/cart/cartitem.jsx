@@ -19,7 +19,7 @@ export const CartItem = (props) => {
     width: "100%",
   };
 
-  const cartItemAmount = cartItem[id];
+  const cartItemAmount = cartItem.find((item) => item.id === id)?.quantity ?? 0;
   return (
     <div className="container-fluid m-1">
       <hr />

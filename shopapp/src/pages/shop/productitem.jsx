@@ -7,7 +7,7 @@ export const ProductItem = (props) => {
   const { id, productName, price, productImage } = props.data;
   const { addToCart, cartItem } = useContext(ShopContext);
 
-  const cartItemAmount = cartItem[id];
+  const cartItemAmount = cartItem.find((item) => item.id === id)?.quantity ?? 0;
 
   const divStyle = {
     height: "450px",

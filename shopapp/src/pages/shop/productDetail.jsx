@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { ShopContext } from "../../shop-context";
-import { Link } from "react-router-dom";
 
 import { useParams } from "react-router-dom";
 
@@ -14,7 +13,8 @@ function ProductDetail(props) {
 
   const { productName, price, productImage, desc, spec } = product;
 
-  const cartItemAmount = cartItem[id];
+  const cartItemAmount =
+    cartItem.find((item) => item.id === parseInt(id))?.quantity ?? 0;
 
   const divStyle = {
     height: "450px",
@@ -55,7 +55,10 @@ function ProductDetail(props) {
             <p>{desc}</p>
           </div>
           <div className="text-center">
-            <button className="addToCartBttn m-3" onClick={() => addToCart(id)}>
+            <button
+              className="addToCartBttn m-3"
+              onClick={() => addToCart(product.id)}
+            >
               Add To Cart {cartItemAmount > 0 && <> ({cartItemAmount})</>}
             </button>
           </div>
