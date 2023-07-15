@@ -38,7 +38,7 @@ export default function Cart() {
           <hr />
         </div>
       ) : (
-        <div>This is the other div.</div>
+        <div></div>
       )}
 
       <div className="container">
