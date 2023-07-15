@@ -9,20 +9,24 @@ export default function Footer() {
       clearInterval(timerID);
     };
   });
+
+  const indent = {
+    textIndent: "50px",
+  };
   return (
     <div className="container-fluid text-center">
       <footer className="site-footer footer mt-auto py-3">
         <hr />
         <div className="container-fluid text-center">
           <div className="row">
-            <div className="col-md-3 text-center">
+            <div className="col-md-3 text-center vertical-align">
               <h3>Current Time:</h3>
               <h4>{date.toLocaleTimeString()}</h4>
             </div>
 
             <div className="col-md-6">
-              <h6>About</h6>
-              <p className="text-justify">
+              <h3>About</h3>
+              <p className="text-justify" style={indent}>
                 Welcome to our online shop, where simplicity meets elegance. We
                 specialize in offering a curated selection of just one product,
                 a true embodiment of minimalism. Our philosophy revolves around
@@ -38,9 +42,9 @@ export default function Footer() {
             </div>
 
             <div className="col-md-3 ">
-              <h6>Links to our social</h6>
+              <h3>Links to our social</h3>
               <div className="container-fluid d-flex align-items-center justify-content-center">
-                <ul className="footer-links list-unstyled">
+                <ul className="footer-links list-unstyled no-color">
                   <li>
                     <a href="https://www.facebook.com/HelloWrongPage/">
                       Facebook

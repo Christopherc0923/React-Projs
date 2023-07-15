@@ -33,8 +33,8 @@ app.post("/create-stripe-session", async (req, res) => {
         quantity: item.quantity,
       })),
       mode: "payment",
-      success_url: "http://localhost:3000/cart/success", // Redirect URL after successful payment
-      cancel_url: "http://localhost:3000/cart/cancel", // Redirect URL if payment is canceled
+      success_url: "http://localhost:3000/React-Projs/cart/success", // Redirect URL after successful payment
+      cancel_url: "http://localhost:3000/React-Projs/cart/cancel", // Redirect URL if payment is canceled
     });
 
     // Return the session information as a JSON response

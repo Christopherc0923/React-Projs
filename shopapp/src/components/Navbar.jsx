@@ -6,7 +6,7 @@ export default function Navbar() {
 
   return (
     <div className="container-fluid d-flex justify-content-center">
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-unstyled navbar-expand-lg ">
         <Link to="/" className="nav-link">
           Home
         </Link>

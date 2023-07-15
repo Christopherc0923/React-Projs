@@ -23,7 +23,10 @@ export const ProductItem = (props) => {
 
   return (
     <div className="product m-3 border">
-      <div className="container-fluid d-flex vertical-align" style={divStyle}>
+      <div
+        className="container-fluid d-flex vertical-align zoom-effect"
+        style={divStyle}
+      >
         <img className="img-fluid" src={productImage} style={imgStyle} />
       </div>
       <div className="container-fluid">

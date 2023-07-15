@@ -1,6 +1,6 @@
-import { Rows } from "phosphor-react";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "../../global.css";
 
 export default function HomeItem(props) {
   const { productImage, bg, id, productName, homePageText } = props.data;
@@ -25,7 +25,7 @@ export default function HomeItem(props) {
           {homePageText}
         </h6>
       </div>
-      <div className="row d-flex justify-content-center">
+      <div className="row d-flex justify-content-center zoom-effect">
         <img src={productImage} style={imgStyle} />
       </div>
       <div className="row d-flex justify-content-center">
