@@ -5,6 +5,17 @@ import p4 from "./assets/4.jpg";
 import p5 from "./assets/5.jpg";
 import p6 from "./assets/6.jpg";
 
+export const FilterType = [
+  "Laptop",
+  "Phone",
+  "Earbud",
+  "Keyboard",
+  "Mouse",
+  "Peripheral",
+  "Table",
+  "Productivity",
+];
+
 export const Products = [
   {
     id: 1,
@@ -23,6 +34,7 @@ export const Products = [
       Connectivity: "4G/5G and Wi-Fi connectivity for seamless browsing",
     },
     homePageText: "Most Advanced Phone Yet.",
+    skills: ["Phone", "Productivity"],
   },
   {
     id: 2,
@@ -51,6 +63,7 @@ export const Products = [
       Durability: "Sweat and water resistance for an active lifestyle",
     },
     homePageText: "Seemless Transition To Your Ears.",
+    skills: ["Earbud", "Productivity", "Peripheral"],
   },
   {
     id: 3,
@@ -74,6 +87,7 @@ export const Products = [
         "Discreet channels and compartments for organized cable management",
     },
     homePageText: "Unmatched Productivity.",
+    skills: ["Table", "Productivity"],
   },
   {
     id: 4,
@@ -98,6 +112,7 @@ export const Products = [
       Design: "Slim and lightweight with a sleek and minimalist aesthetic",
     },
     homePageText: "Thinnest Laptop In The World.",
+    skills: ["Laptop", "Productivity"],
   },
   {
     id: 5,
@@ -116,6 +131,7 @@ export const Products = [
       Durability: "High-quality construction for long-lasting use",
     },
     homePageText: "",
+    skills: ["Keyboard", "Productivity", "Peripheral"],
   },
   {
     id: 6,
@@ -141,5 +157,6 @@ export const Products = [
       Durability: "Built with durable materials and high-quality switches",
     },
     homePageText: "",
+    skills: ["Mouse", "Productivity", "Peripheral"],
   },
 ];
