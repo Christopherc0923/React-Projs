@@ -42,19 +42,32 @@ export default function Footer() {
             </div>
 
             <div className="col-md-3 ">
-              <h3>Links to our social</h3>
+              <h3>Social Links</h3>
               <div className="container-fluid d-flex align-items-center justify-content-center">
                 <ul className="footer-links list-unstyled no-color">
                   <li>
-                    <a href="https://www.facebook.com/HelloWrongPage/">
+                    <a
+                      className="text-decoration-none text-dark"
+                      href="https://www.facebook.com/HelloWrongPage/"
+                    >
                       Facebook
                     </a>
                   </li>
                   <li>
-                    <a href="https://twitter.com/?lang=en">Twitter</a>
+                    <a
+                      className="text-decoration-none text-dark"
+                      href="https://twitter.com/?lang=en"
+                    >
+                      Twitter
+                    </a>
                   </li>
                   <li>
-                    <a href="https://discord.com/">Discord</a>
+                    <a
+                      className="text-decoration-none text-dark"
+                      href="https://discord.com/"
+                    >
+                      Discord
+                    </a>
                   </li>
                 </ul>
               </div>

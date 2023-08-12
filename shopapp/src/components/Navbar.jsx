@@ -6,14 +6,14 @@ export default function Navbar() {
 
   return (
     <div className="container-fluid d-flex justify-content-center">
-      <nav className="navbar navbar-unstyled navbar-expand-lg ">
-        <Link to="/" className="nav-link">
+      <nav className="navbar navbar-expand-lg">
+        <Link to="/" className="nav-link text-decoration-none text-dark">
           Home
         </Link>
-        <Link to="/shop" className="nav-link">
+        <Link to="/shop" className="nav-link text-decoration-none text-dark">
           Shop
         </Link>
-        <Link to="/cart" className="nav-link">
+        <Link to="/cart" className="nav-link text-decoration-none text-dark">
           Cart
         </Link>
       </nav>

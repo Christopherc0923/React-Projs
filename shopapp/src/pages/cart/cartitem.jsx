@@ -40,12 +40,19 @@ export const CartItem = (props) => {
           </div>
           <div className="text-center">
             <div className="countHandler" style={textStyle}>
-              <button onClick={() => removeFromCart(id)}> - </button>
+              <button className="btn" onClick={() => removeFromCart(id)}>
+                {" "}
+                -{" "}
+              </button>
               <input
+                className="text-center"
                 value={cartItemAmount}
                 onChange={(e) => updateCartItem(Number(e.target.value), id)}
               />
-              <button onClick={() => addToCart(id)}> + </button>
+              <button className="btn" onClick={() => addToCart(id)}>
+                {" "}
+                +{" "}
+              </button>
             </div>
           </div>
         </div>
