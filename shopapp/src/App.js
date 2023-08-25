@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Cart from "./pages/cart/cart";
 import Shop from "./pages/shop/shop";
@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App" style={{ margin: "0", padding: "0" }}>
       <ShopContextProvider>
-        <Router basename="/React-Projs">
+        <HashRouter basename="/">
           <Navbar />
           <Routes>
             <Route path="/shop" element={<Shop />} />
@@ -29,7 +29,7 @@ function App() {
             <Route path="/cart/cancel" component={<CartCancel />} />
           </Routes>
           <Footer />
-        </Router>
+        </HashRouter>
       </ShopContextProvider>
     </div>
   );
