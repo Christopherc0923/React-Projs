@@ -1,18 +1,28 @@
 {
   "files": {
-    "main.css": "/React-Projs/static/css/main.eafd7135.css",
-    "main.js": "/React-Projs/static/js/main.687804ae.js",
-    "static/media/5.jpg": "/React-Projs/static/media/5.00081637985bb383ff06.jpg",
-    "static/media/1.png": "/React-Projs/static/media/1.87f6c2f48f7e15ed845b.png",
-    "static/media/4.jpg": "/React-Projs/static/media/4.feee47c97affab13992c.jpg",
-    "static/media/2.jpg": "/React-Projs/static/media/2.2c692170193ef6c14316.jpg",
-    "static/media/3.webp": "/React-Projs/static/media/3.f9ed50148ef6b28131f9.webp",
+    "main.css": "/React-Projs/static/css/main.6c630160.css",
+    "main.js": "/React-Projs/static/js/main.03f8a9be.js",
+    "static/media/k3.jpg": "/React-Projs/static/media/k3.87fc3e25c08089e4303c.jpg",
+    "static/media/k1.jpg": "/React-Projs/static/media/k1.00081637985bb383ff06.jpg",
+    "static/media/k2.jpg": "/React-Projs/static/media/k2.0a34545a890b5e66b4d2.jpg",
+    "static/media/l2.jpg": "/React-Projs/static/media/l2.57151a233231c9c0b931.jpg",
+    "static/media/l3.jpg": "/React-Projs/static/media/l3.2574a77c8bb5216ab2c6.jpg",
+    "static/media/e2.jpg": "/React-Projs/static/media/e2.4523d7887f36d3da4aed.jpg",
+    "static/media/p1.png": "/React-Projs/static/media/p1.87f6c2f48f7e15ed845b.png",
+    "static/media/l1.jpg": "/React-Projs/static/media/l1.feee47c97affab13992c.jpg",
+    "static/media/e1.jpg": "/React-Projs/static/media/e1.2c692170193ef6c14316.jpg",
+    "static/media/k4.jpg": "/React-Projs/static/media/k4.6e69d835a2ba3dbcc3fd.jpg",
+    "static/media/p2.jpg": "/React-Projs/static/media/p2.0f50788bb49c3282d0f0.jpg",
+    "static/media/p4.webp": "/React-Projs/static/media/p4.3774a0c95e7a387c9fc8.webp",
+    "static/media/m2.webp": "/React-Projs/static/media/m2.e487a5455d245a691fd6.webp",
+    "static/media/p3.webp": "/React-Projs/static/media/p3.6e49a8570acdf52c1b42.webp",
+    "static/media/t1.webp": "/React-Projs/static/media/t1.f9ed50148ef6b28131f9.webp",
     "index.html": "/React-Projs/index.html",
-    "main.eafd7135.css.map": "/React-Projs/static/css/main.eafd7135.css.map",
-    "main.687804ae.js.map": "/React-Projs/static/js/main.687804ae.js.map"
+    "main.6c630160.css.map": "/React-Projs/static/css/main.6c630160.css.map",
+    "main.03f8a9be.js.map": "/React-Projs/static/js/main.03f8a9be.js.map"
   },
   "entrypoints": [
-    "static/css/main.eafd7135.css",
-    "static/js/main.687804ae.js"
+    "static/css/main.6c630160.css",
+    "static/js/main.03f8a9be.js"
   ]
 }
