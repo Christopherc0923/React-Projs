@@ -1,9 +1,26 @@
-import p1 from "./assets/1.png";
-import p2 from "./assets/2.jpg";
-import p3 from "./assets/3.webp";
-import p4 from "./assets/4.jpg";
-import p5 from "./assets/5.jpg";
-import p6 from "./assets/6.jpg";
+import e1 from "./assets/e1.jpg";
+import e2 from "./assets/e2.jpg";
+
+import k1 from "./assets/k1.jpg";
+import k2 from "./assets/k2.jpg";
+import k3 from "./assets/k3.jpg";
+import k4 from "./assets/k4.jpg";
+
+import l1 from "./assets/l1.jpg";
+import l2 from "./assets/l2.jpg";
+import l3 from "./assets/l3.jpg";
+import l4 from "./assets/l4.jpg";
+
+import m1 from "./assets/m1.jpg";
+import m2 from "./assets/m2.webp";
+
+import p1 from "./assets/p1.png";
+import p2 from "./assets/p2.jpg";
+import p3 from "./assets/p3.webp";
+import p4 from "./assets/p4.webp";
+
+import t1 from "./assets/t1.webp";
+import t2 from "./assets/t2.jpg";
 
 export const FilterType = [
   "Laptop",
@@ -20,7 +37,7 @@ export const Products = [
   {
     id: 1,
     productName: "nothingPhone",
-    price: 399.0,
+    price: 899.0,
     productImage: p1,
     bg: "bg-dark",
     desc: "Introducing the NothingPhone, a sophisticated and minimalist smartphone that seamlessly integrates into your connected lifestyle. With its cutting-edge features and elegant design, the NothingPhone empowers you to stay connected, capture memories, and experience the world at your fingertips.",
@@ -40,7 +57,7 @@ export const Products = [
     id: 2,
     productName: "nothingEarBud",
     price: 199.0,
-    productImage: p2,
+    productImage: e1,
     bg: "bg-light",
     desc: "Introducing the NothingBuds Earbuds, the perfect blend of simplicity and intelligence, designed to elevate your audio experience on the go. With their sleek design and advanced features, these earbuds offer a seamless and immersive sound experience.",
     spec: {
@@ -67,9 +84,9 @@ export const Products = [
   },
   {
     id: 3,
-    productName: "nothingTable",
+    productName: "nothingTable Pro",
     price: 499.0,
-    productImage: p3,
+    productImage: t1,
     bg: "bg-light",
     desc: "Introducing the Nothing Height-Adjustable Table, a minimal and intelligent solution designed to enhance your productivity and comfort. With its sleek design and advanced features, this table seamlessly blends into any modern workspace while offering customizable functionality.",
     spec: {
@@ -93,7 +110,7 @@ export const Products = [
     id: 4,
     productName: "nothingLaptop",
     price: 1399.0,
-    productImage: p4,
+    productImage: l1,
     bg: "bg-light",
     desc: "Introducing the NothingLaptop, a remarkable device that embodies the perfect fusion of power, elegance, and portability. With its sleek and slim design, the NothingLaptop sets a new standard for modern computing.",
     spec: {
@@ -118,7 +135,7 @@ export const Products = [
     id: 5,
     productName: "nothingKeyboard",
     price: 99.0,
-    productImage: p5,
+    productImage: k1,
     bg: "bg-dark",
     desc: "Introducing the NothingKeyboard, a sleek and minimalistic keyboard designed to enhance your typing experience. With its smart features and ergonomic design, this keyboard offers both style and functionality for seamless productivity.",
     spec: {
@@ -137,7 +154,7 @@ export const Products = [
     id: 6,
     productName: "nothingMouse",
     price: 19.0,
-    productImage: p6,
+    productImage: m1,
     bg: "bg-dark",
     desc: "Introducing the Nothing Gaming Mouse, a sleek and intelligent companion that enhances your gaming performance with simplicity and precision. Designed for gamers of all levels, this mouse offers a seamless and intuitive experience that adapts to your gaming style.",
     spec: {
@@ -158,5 +175,115 @@ export const Products = [
     },
     homePageText: "",
     skills: ["Mouse", "Productivity", "Peripheral"],
+  },
+  {
+    id: 7,
+    productName: "nothingPhone",
+    price: 299.0,
+    productImage: p2,
+    bg: "bg-dark",
+    desc: "",
+    spec: {
+      Design: "Sleek and minimalistic design with an edge-to-edge display",
+      Camera: "High-resolution camera for stunning photos and videos",
+      Performance: "Powerful processor and ample RAM for seamless multitasking",
+      "User Interface": "Intuitive and user-friendly interface",
+      "Battery Life": "Long-lasting battery for uninterrupted usage",
+      Security: "Advanced biometric authentication for enhanced privacy",
+      Connectivity: "4G/5G and Wi-Fi connectivity for seamless browsing",
+    },
+    homePageText: "",
+    skills: ["Phone", "Productivity"],
+  },
+  {
+    id: 8,
+    productName: "nothingPhone",
+    price: 699.0,
+    productImage: p3,
+    bg: "bg-dark",
+    desc: "",
+    spec: {
+      Design: "Sleek and minimalistic design with an edge-to-edge display",
+      Camera: "High-resolution camera for stunning photos and videos",
+      Performance: "Powerful processor and ample RAM for seamless multitasking",
+      "User Interface": "Intuitive and user-friendly interface",
+      "Battery Life": "Long-lasting battery for uninterrupted usage",
+      Security: "Advanced biometric authentication for enhanced privacy",
+      Connectivity: "4G/5G and Wi-Fi connectivity for seamless browsing",
+    },
+    homePageText: "",
+    skills: ["Phone", "Productivity"],
+  },
+  {
+    id: 9,
+    productName: "nothingPhone Special Edition",
+    price: 599.0,
+    productImage: p4,
+    bg: "bg-dark",
+    desc: "",
+    spec: {
+      Design: "Sleek and minimalistic design with an edge-to-edge display",
+      Camera: "High-resolution camera for stunning photos and videos",
+      Performance: "Powerful processor and ample RAM for seamless multitasking",
+      "User Interface": "Intuitive and user-friendly interface",
+      "Battery Life": "Long-lasting battery for uninterrupted usage",
+      Security: "Advanced biometric authentication for enhanced privacy",
+      Connectivity: "4G/5G and Wi-Fi connectivity for seamless browsing",
+    },
+    homePageText: "",
+    skills: ["Phone", "Productivity"],
+  },
+  {
+    id: 10,
+    productName: "nothingEarBud",
+    price: 99.0,
+    productImage: e2,
+    bg: "bg-light",
+    desc: "Introducing the NothingBuds Earbuds, the perfect blend of simplicity and intelligence, designed to elevate your audio experience on the go. With their sleek design and advanced features, these earbuds offer a seamless and immersive sound experience.",
+    spec: {
+      Design:
+        "Compact and lightweight design with a comfortable and secure fit",
+      Connectivity:
+        "Advanced Bluetooth technology for seamless wireless audio streaming",
+      "Noise-Canceling":
+        "Advanced noise-canceling technology for immersive audio",
+      "Touch Controls":
+        "Intuitive touch controls for easy playback and call management",
+      "Voice Assistant Integration":
+        "Seamless integration with digital voice assistants",
+      "Battery Life":
+        "Long-lasting battery life for hours of uninterrupted use",
+      "Charging Case":
+        "Compact charging case for storage and on-the-go charging",
+      "Audio Quality":
+        "High-fidelity audio drivers for rich and balanced sound",
+      Durability: "Sweat and water resistance for an active lifestyle",
+    },
+    homePageText: "Seemless Transition To Your Ears.",
+    skills: ["Earbud", "Productivity", "Peripheral"],
+  },
+  {
+    id: 11,
+    productName: "nothingTable",
+    price: 399.0,
+    productImage: t2,
+    bg: "bg-light",
+    desc: "Introducing the Nothing Height-Adjustable Table, a minimal and intelligent solution designed to enhance your productivity and comfort. With its sleek design and advanced features, this table seamlessly blends into any modern workspace while offering customizable functionality.",
+    spec: {
+      Design: "Clean and minimalist design with a sleek and elegant aesthetic",
+      "Bluetooth Connectivity":
+        "Wireless control of height adjustment via Bluetooth-enabled devices",
+      "Height Adjustment":
+        "Motorized height adjustment for ergonomic flexibility",
+      "Silent Operation": "Smooth and quiet height adjustment mechanism",
+      "Sturdy Construction":
+        "High-quality materials for durability and stability",
+      "Integrated Charging Ports":
+        "Built-in USB ports for convenient device charging",
+      "Cable Management System":
+        "Discreet channels and compartments for organized cable management",
+    },
+    homePageText: "Unmatched Productivity.",
+    skills: ["Table", "Productivity"],
   },
 ];

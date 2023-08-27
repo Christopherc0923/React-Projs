@@ -3,8 +3,8 @@ import { useContext } from "react";
 import { ShopContext } from "../../shop-context";
 import { Link } from "react-router-dom";
 
-export const ProductItem = (props) => {
-  const { id, productName, price, productImage } = props.data;
+export const ProductItem = ({ data }) => {
+  const { id, productName, price, productImage } = data;
   const { addToCart, cartItem } = useContext(ShopContext);
 
   const cartItemAmount = cartItem.find((item) => item.id === id)?.quantity ?? 0;
@@ -31,7 +31,7 @@ export const ProductItem = (props) => {
       </div>
       <div className="container-fluid">
         <h3>{productName}</h3>
-        <p>${price}</p>
+        <p class="mb-auto">${price}</p>
         <button className="addToCartBttn m-3" onClick={() => addToCart(id)}>
           Add To Cart {cartItemAmount > 0 && <> ({cartItemAmount})</>}
         </button>
