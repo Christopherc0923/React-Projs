@@ -8,7 +8,7 @@ import "./shop.css";
 
 export default function Shop() {
   return (
-    <div class="container-fluid p-3">
+    <div class="container-fluid p-3" style={{ minHeight: "100vh" }}>
       <div class="text-center">
         <h1>The Nothing Shop</h1>
       </div>

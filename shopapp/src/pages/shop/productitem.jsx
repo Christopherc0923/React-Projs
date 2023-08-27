@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { ShopContext } from "../../shop-context";
 import { Link } from "react-router-dom";
 
-export const ProductItem = ({ data }) => {
+export const ProductItem = ({ data, maxHeight }) => {
   const { id, productName, price, productImage } = data;
   const { addToCart, cartItem } = useContext(ShopContext);
 

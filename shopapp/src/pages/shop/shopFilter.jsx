@@ -77,7 +77,7 @@ export default function ShopFilter() {
 
       <div className="row col-lg-10">
         {filteredProjects.map((product, id) => (
-          <div className="col-lg-4" key={id} id="product">
+          <div className="col-xl-4" key={id} id="product">
             <ProductItem data={product} maxHeight={maxHeight} />
           </div>
         ))}
